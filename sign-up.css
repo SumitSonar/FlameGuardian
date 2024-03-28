@@ -1,0 +1,301 @@
+.return-home {
+    position: absolute;
+    height: 95.83%;
+    width: 75.54%;
+    top: 4.17%;
+    left: 24.46%;
+    line-height: 22.53px;
+    display: inline-block;
+  }
+  .chevron-left-icon {
+    position: absolute;
+    height: 100%;
+    width: 24.46%;
+    top: 0;
+    right: 75.54%;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .btntext {
+    position: absolute;
+    height: 2.67%;
+    width: 6.8%;
+    top: 2.56%;
+    right: 53.88%;
+    bottom: 94.78%;
+    left: 39.32%;
+    cursor: pointer;
+  }
+  .need-help {
+    position: absolute;
+    height: 100%;
+    width: 69.26%;
+    top: 0;
+    left: 30.74%;
+    line-height: 22.53px;
+    display: inline-block;
+  }
+  .info-icon {
+    position: absolute;
+    height: 78.26%;
+    width: 19.76%;
+    top: 8.7%;
+    right: 80.24%;
+    bottom: 13.04%;
+    left: 0;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  .btntext1,
+  .copyright-2021-1 {
+    position: absolute;
+    height: 2.56%;
+    text-align: left;
+  }
+  .btntext1 {
+    width: 6.32%;
+    top: 92.11%;
+    right: 4.79%;
+    bottom: 5.33%;
+    left: 88.89%;
+  }
+  .copyright-2021-1 {
+    width: 22.05%;
+    top: 92.44%;
+    left: 54.65%;
+    letter-spacing: -0.5px;
+    line-height: 22.53px;
+    color: var(--color-darkgray);
+    display: inline-block;
+  }
+  .log-in-now {
+    text-decoration: underline;
+    color: var(--color-gray-300);
+  }
+  .already-a-member-container {
+    position: absolute;
+    width: calc(100% - 1255.7px);
+    top: calc(50% - 409px);
+    left: 1186.6px;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .become-an-exclusive,
+  .sign-up-and {
+    align-self: stretch;
+    position: relative;
+    line-height: 44px;
+    text-transform: uppercase;
+  }
+  .sign-up-and {
+    font-size: var(--font-size-base);
+    line-height: 28.16px;
+    font-family: var(--font-zen-kaku-gothic-antique);
+    color: var(--color-darkslategray);
+    white-space: pre-wrap;
+  }
+  .heading {
+    position: absolute;
+    width: calc(100% - 870px);
+    top: 171px;
+    right: 114.6px;
+    left: 755.4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px 0;
+    font-size: var(--font-size-6xl);
+    color: var(--color-gray-300);
+    font-family: var(--font-poppins);
+  }
+  .rectangle {
+    position: absolute;
+    height: 101.39%;
+    width: 100.24%;
+    top: -0.69%;
+    right: -0.12%;
+    bottom: -0.69%;
+    left: -0.12%;
+    border-radius: var(--br-11xl);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gray-100);
+    box-sizing: border-box;
+  }
+  .icon-user {
+    position: absolute;
+    height: 33.33%;
+    width: 5.71%;
+    top: 33.33%;
+    right: 89.52%;
+    bottom: 33.33%;
+    left: 4.76%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  .johnson-doe {
+    position: absolute;
+    height: 45.83%;
+    width: 86.9%;
+    top: 27.08%;
+    left: 13.1%;
+    line-height: 28.16px;
+    display: flex;
+    align-items: center;
+  }
+  .inputname {
+    width: 420px;
+    position: relative;
+    height: 72px;
+  }
+  .div,
+  .show {
+    position: absolute;
+  }
+  .div {
+    height: 45.83%;
+    width: 81.19%;
+    top: 27.08%;
+    left: 13.1%;
+    line-height: 28.16px;
+    display: flex;
+    align-items: center;
+  }
+  .show {
+    top: 33.33%;
+    left: 89.05%;
+    font-size: var(--font-size-2xs-2);
+    line-height: 22.53px;
+    color: var(--color-darkgray);
+    text-align: right;
+  }
+  .btn-prytemplate-2-child {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-gray-200);
+  }
+  .become-a-member {
+    position: absolute;
+    top: 30.56%;
+    left: 9.64%;
+    line-height: 28.16px;
+    font-weight: 900;
+  }
+  .ex-iconarrow-right-copy {
+    position: absolute;
+    height: 44.44%;
+    width: 7.62%;
+    top: 27.78%;
+    right: 7.62%;
+    bottom: 27.78%;
+    left: 84.76%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  .btn-prytemplate-2 {
+    width: 420px;
+    position: relative;
+    height: 72px;
+    cursor: pointer;
+    text-align: center;
+    font-size: var(--font-size-xl);
+    color: var(--color-white);
+  }
+  .form {
+    position: absolute;
+    width: calc(100% - 1022px);
+    top: 291px;
+    right: 191px;
+    left: 831px;
+    height: 342px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    font-size: var(--font-size-base);
+  }
+  .firefighter-1-icon {
+    position: absolute;
+    top: -26px;
+    left: 0;
+    width: 549px;
+    height: 926px;
+    object-fit: cover;
+  }
+  .lorem-ipsum-dolor,
+  .partnership-for-business {
+    position: absolute;
+    width: 26.35%;
+    font-family: var(--font-poppins);
+    color: var(--color-white);
+  }
+  .lorem-ipsum-dolor {
+    height: 6.78%;
+    top: 71.56%;
+    left: 5.83%;
+    font-size: var(--font-size-base);
+    line-height: 28.16px;
+    font-weight: 500;
+    display: inline-block;
+  }
+  .partnership-for-business {
+    height: 10.44%;
+    top: 57.67%;
+    left: 6.8%;
+    font-size: var(--font-size-13xl);
+    line-height: 46.87px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .openmojifire-extinguisher-icon1 {
+    width: 72px;
+    position: relative;
+    height: 63px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .flameguardian2 {
+    position: relative;
+    font-weight: 800;
+  }
+  .logo1 {
+    position: absolute;
+    top: 9px;
+    left: 117px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-5xl);
+    color: var(--color-white);
+    font-family: var(--font-poppins);
+  }
+  .sign-up3 {
+    width: 100%;
+    position: relative;
+    background-color: var(--color-whitesmoke);
+    height: 900px;
+    overflow: hidden;
+    text-align: center;
+    font-size: var(--font-size-smi-8);
+    color: var(--color-darkslategray);
+    font-family: var(--font-zen-kaku-gothic-antique);
+  }
+  

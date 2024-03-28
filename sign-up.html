@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./sign-up.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Zen Kaku Gothic Antique:wght@400;500;700;900&display=swap"
+    />
+  </head>
+  <body>
+    <div class="sign-up3">
+      <div class="btntext" id="btntextContainer">
+        <div class="return-home">Return Home</div>
+        <img class="chevron-left-icon" alt="" src="./public/chevronleft.svg" />
+      </div>
+      <div class="btntext1">
+        <div class="need-help">Need help?</div>
+        <img class="info-icon" alt="" src="./public/info@2x.png" />
+      </div>
+      <div class="copyright-2021-1">
+        Copyright 2021 - 2024 FlameGuardian Inc. All rights Reserved
+      </div>
+      <div class="already-a-member-container" id="alreadyAMember">
+        <span>Already a Member?</span>
+        <b class="log-in-now"> LOG IN NOW</b>
+      </div>
+      <div class="heading">
+        <b class="become-an-exclusive"
+          >Stand Shoulder to Shoulder with Heroes</b
+        >
+        <div class="sign-up-and">SIGN UP and REGISTER for Duty</div>
+      </div>
+      <div class="form">
+        <div class="inputname">
+          <div class="rectangle"></div>
+          <img class="icon-user" alt="" src="./public/iconuser@2x.png" />
+
+          <div class="johnson-doe">Johnson Doe</div>
+        </div>
+        <div class="inputname">
+          <div class="rectangle"></div>
+          <div class="johnson-doe">example@email.com</div>
+          <img class="icon-user" alt="" src="./public/iconmail@2x.png" />
+        </div>
+        <div class="inputname">
+          <div class="rectangle"></div>
+          <div class="div">*********</div>
+          <div class="show">SHOW</div>
+          <img class="icon-user" alt="" src="./public/lock@2x.png" />
+        </div>
+        <div class="btn-prytemplate-2" id="btnPrytemplate2Container">
+          <div class="btn-prytemplate-2-child"></div>
+          <div class="become-a-member">Sign Up</div>
+          <img
+            class="ex-iconarrow-right-copy"
+            alt=""
+            src="./public/exiconarrowright-copy@2x.png"
+          />
+        </div>
+      </div>
+      <img
+        class="firefighter-1-icon"
+        alt=""
+        src="./public/firefighter-1@2x.png"
+      />
+
+      <div class="lorem-ipsum-dolor">
+        Become an integral part of our firefighting family, united in the
+        commitment to safeguarding lives and communities
+      </div>
+      <b class="partnership-for-business"
+        >Unleashing the Power of Fire Response</b
+      >
+      <div class="logo1">
+        <img
+          class="openmojifire-extinguisher-icon1"
+          alt=""
+          src="./public/openmojifireextinguisher.svg"
+        />
+
+        <div class="flameguardian2">FlameGuardian</div>
+      </div>
+    </div>
+
+    <script>
+      var btntextContainer = document.getElementById("btntextContainer");
+      if (btntextContainer) {
+        btntextContainer.addEventListener("click", function (e) {
+          window.location.href = "./landing-page.html";
+        });
+      }
+      
+      var alreadyAMember = document.getElementById("alreadyAMember");
+      if (alreadyAMember) {
+        alreadyAMember.addEventListener("click", function (e) {
+          window.location.href = "./log-in.html";
+        });
+      }
+      
+      var btnPrytemplate2Container = document.getElementById(
+        "btnPrytemplate2Container"
+      );
+      if (btnPrytemplate2Container) {
+        btnPrytemplate2Container.addEventListener("click", function (e) {
+          window.location.href = "./dashboard.html";
+        });
+      }
+      </script>
+  </body>
+</html>

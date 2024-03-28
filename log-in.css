@@ -1,0 +1,302 @@
+.return-home1 {
+    position: absolute;
+    width: 75.54%;
+    top: 4.17%;
+    left: 24.46%;
+    line-height: 22.53px;
+    display: inline-block;
+  }
+  .chevron-left-icon1 {
+    position: absolute;
+    height: 100%;
+    width: 24.46%;
+    top: 0;
+    right: 75.54%;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .btntext2 {
+    position: absolute;
+    height: 2.67%;
+    width: 6.8%;
+    top: 2.56%;
+    right: 53.88%;
+    bottom: 94.78%;
+    left: 39.32%;
+    cursor: pointer;
+  }
+  .need-help1 {
+    position: absolute;
+    width: 69.26%;
+    top: 0;
+    left: 30.74%;
+    line-height: 22.53px;
+    display: inline-block;
+  }
+  .info-icon1 {
+    position: absolute;
+    height: 78.26%;
+    width: 19.76%;
+    top: 8.7%;
+    right: 80.24%;
+    bottom: 13.04%;
+    left: 0;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  .btntext3,
+  .copyright-2021-2 {
+    position: absolute;
+    text-align: left;
+  }
+  .btntext3 {
+    height: 2.56%;
+    width: 6.32%;
+    top: 92.11%;
+    right: 4.79%;
+    bottom: 5.33%;
+    left: 88.89%;
+  }
+  .copyright-2021-2 {
+    width: 22.05%;
+    top: 92.44%;
+    left: 54.65%;
+    letter-spacing: -0.5px;
+    line-height: 22.53px;
+    color: var(--color-darkgray);
+    display: inline-block;
+  }
+  .not-registered {
+    white-space: pre-wrap;
+  }
+  .sign-up-now {
+    text-decoration: underline;
+    color: var(--color-gray-300);
+  }
+  .already-a-member-container1 {
+    position: absolute;
+    width: calc(100% - 1224px);
+    top: calc(50% - 409px);
+    left: 1155px;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .become-an-exclusive1,
+  .sign-up-and1 {
+    align-self: stretch;
+    position: relative;
+    line-height: 44px;
+    text-transform: uppercase;
+  }
+  .sign-up-and1 {
+    font-size: var(--font-size-base);
+    line-height: 28.16px;
+    font-family: var(--font-zen-kaku-gothic-antique);
+    color: var(--color-darkslategray);
+    white-space: pre-wrap;
+  }
+  .heading1 {
+    position: absolute;
+    width: calc(100% - 870px);
+    top: 171px;
+    right: 114.6px;
+    left: 755.4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px 0;
+    font-size: var(--font-size-6xl);
+    color: var(--color-gray-300);
+    font-family: var(--font-poppins);
+  }
+  .rectangle3 {
+    position: absolute;
+    height: 101.39%;
+    width: 100.24%;
+    top: -0.69%;
+    right: -0.12%;
+    bottom: -0.69%;
+    left: -0.12%;
+    border-radius: var(--br-11xl);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gray-100);
+    box-sizing: border-box;
+  }
+  .icon-user1 {
+    position: absolute;
+    height: 33.33%;
+    width: 5.71%;
+    top: 33.33%;
+    right: 89.52%;
+    bottom: 33.33%;
+    left: 4.76%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  .johnson-doe1 {
+    position: absolute;
+    height: 45.83%;
+    width: 86.9%;
+    top: 27.08%;
+    left: 13.1%;
+    line-height: 28.16px;
+    display: flex;
+    align-items: center;
+  }
+  .inputname1 {
+    width: 420px;
+    position: relative;
+    height: 72px;
+  }
+  .div1,
+  .show1 {
+    position: absolute;
+  }
+  .div1 {
+    height: 45.83%;
+    width: 81.19%;
+    top: 27.08%;
+    left: 13.1%;
+    line-height: 28.16px;
+    display: flex;
+    align-items: center;
+  }
+  .show1 {
+    top: 33.33%;
+    left: 89.05%;
+    font-size: var(--font-size-2xs-2);
+    line-height: 22.53px;
+    color: var(--color-darkgray);
+    text-align: right;
+  }
+  .btn-prytemplate-2-item {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-gray-200);
+  }
+  .become-a-member1 {
+    position: absolute;
+    top: 30.56%;
+    left: 11.55%;
+    line-height: 28.16px;
+    font-weight: 900;
+  }
+  .ex-iconarrow-right-copy1 {
+    position: absolute;
+    height: 44.44%;
+    width: 7.62%;
+    top: 27.78%;
+    right: 7.62%;
+    bottom: 27.78%;
+    left: 84.76%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  .btn-prytemplate-21 {
+    width: 420px;
+    position: relative;
+    height: 72px;
+    cursor: pointer;
+    text-align: center;
+    font-size: var(--font-size-xl);
+    color: var(--color-white);
+  }
+  .form1 {
+    position: absolute;
+    width: calc(100% - 1022px);
+    top: 291px;
+    right: 191px;
+    left: 831px;
+    height: 342px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    font-size: var(--font-size-base);
+  }
+  .firefighter-1-icon1 {
+    position: absolute;
+    top: -26px;
+    left: 0;
+    width: 549px;
+    height: 926px;
+    object-fit: cover;
+  }
+  .lorem-ipsum-dolor1,
+  .partnership-for-business1 {
+    position: absolute;
+    width: 26.35%;
+    font-family: var(--font-poppins);
+    color: var(--color-white);
+  }
+  .lorem-ipsum-dolor1 {
+    height: 6.78%;
+    top: 71.56%;
+    left: 5.83%;
+    font-size: var(--font-size-base);
+    line-height: 28.16px;
+    font-weight: 500;
+    display: inline-block;
+  }
+  .partnership-for-business1 {
+    top: 57.67%;
+    left: 6.8%;
+    font-size: var(--font-size-13xl);
+    line-height: 46.87px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .openmojifire-extinguisher-icon2 {
+    width: 72px;
+    position: relative;
+    height: 63px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .flameguardian3 {
+    position: relative;
+    font-weight: 800;
+  }
+  .logo2 {
+    position: absolute;
+    top: 9px;
+    left: 117px;
+    width: 268px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: var(--font-size-5xl);
+    color: var(--color-white);
+    font-family: var(--font-poppins);
+  }
+  .log-in1 {
+    width: 100%;
+    position: relative;
+    background-color: var(--color-whitesmoke);
+    height: 900px;
+    overflow: hidden;
+    text-align: center;
+    font-size: var(--font-size-smi-8);
+    color: var(--color-darkslategray);
+    font-family: var(--font-zen-kaku-gothic-antique);
+  }
+  
