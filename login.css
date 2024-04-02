@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+    
+}
+
+
+html,body{
+    height: 100vh;
+    width: 100%;
+   
+}
+.container{
+    height:100vh;
+    width:100%;
+}
+.container-left{
+    display: inline-block;
+    height:100vh;
+    width:40%;
+    background-image: url("Firefighter-img.png");
+    background-position: left;
+    background-size: cover;;
+
+}
+.logo{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top:5vh;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+.logo i{
+    padding-right: 10px;
+}
+
+.img-content{
+    width: 60%;
+    position: relative;
+    top:60vh;
+    left:20%;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+}
+.img-content p{
+    position: relative;
+    top:3vh;
+}
+.container-right{
+    display: inline-block;
+    height:100vh;
+    width:59%;
+   
+    
+
+}
+.container-right .nav{
+display:flex;
+justify-content: space-between;
+
+
+
+
+}
+.return-home{
+    font-size: 15px;
+   padding-left: 10px;
+
+}
+.return-home  i {
+    padding-right: 10px;
+}
+.container-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20vh;
+   
+}
+
+
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 60%;
+   
+}
+.signup-form h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.signup-form h5{
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: lighter;
+}
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"] {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding-left: 35px; /* Space for icon */
+
+}
+.signup-form input[type="text"]::placeholder,
+.signup-form input[type="email"]::placeholder,
+.signup-form input[type="password"]::placeholder {
+    color: #aaa;
+}
+.signup-form .fa {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #555;
+}
+.signup-form button {
+    width: 50%;
+    padding: 15px;
+    background: black;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+    left: 25%;
+}
+.signup-form button:hover {
+    background: #0056b3;
+}
+.form-container{
+   position: relative;
+   left: 0%;
+   top: 5vh;
+   
+    
+}
+.footer{
+    position: relative;
+    background:#0c0124;
+    height: 5vh;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+
