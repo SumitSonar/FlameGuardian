@@ -110,7 +110,7 @@
   .header-content-img {
     width: 95%;
     height: 23vh;
-    background-image: url("Firefighter-img.png");
+    background-image: url("Main\ Img.png");
     background-position: center;
     background-size: cover;
   
@@ -127,6 +127,7 @@
     width: 100%;
     font-size: 30px;
     color: rgb(18, 7, 98);
+    text-shadow: 1px 1px 1px rgb(15, 15, 93); 
     font-weight: bolder;
   }
   
@@ -155,14 +156,16 @@
     font-size: 30px;
     font-weight: bolder;
     color: #fff;
+    text-shadow: 2px 2px 4px black; 
   }
   
   .main-img1 .paragraph {
     text-align: center;
     font-size: 17px;
-    font-weight: 600;
+    font-weight: 400;
     color: #fff;
     margin: 2% 10% 0% 10%;
+    text-shadow: 2px 2px 4px black; 
   }
   
   .main-img2 {
@@ -180,15 +183,17 @@
     font-size: 30px;
     font-weight: bolder;
     color: #fff;
+    text-shadow: 2px 2px 4px black; 
   }
   
   .main-img2 .paragraph {
     text-align: center;
     margin-top: 2%;
     font-size: 17px;
-    font-weight: 600;
+    font-weight: 400;
     color: #fff;
     margin: 2% 10% 0% 10%;
+    text-shadow: 2px 2px 4px black; 
   }
   
   .main-img3 {
@@ -206,15 +211,17 @@
     font-size: 30px;
     font-weight: bolder;
     color: #fff;
+    text-shadow: 2px 2px 4px black; 
   }
   
   .main-img3 .paragraph {
     text-align: center;
     margin-top: 2%;
     font-size: 17px;
-    font-weight: 600;
+    font-weight: 400;
     color: #fff;
     margin: 2% 10% 0% 10%;
+    text-shadow: 2px 2px 4px black; 
   }
   
   .mission-vision-container {
@@ -230,14 +237,13 @@
   .vision-container {
     height: 70%;
     width: 45%;
-    background-image: url("mission-vision\ bg.png");
-    background-size: cover;
-    background-position: center;
+    background: #93afc2;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1), inset 0 0 20px rgba(0, 0, 0, 1);
   
   }
   
@@ -263,10 +269,12 @@
     text-align: center;
     position: relative;
     top: 6%;
+    
   }
   
   .mission-heading {
     font-size: 40px;
+    text-shadow: 2px 2px 4px black; 
     color: #fff;
     font-weight: bolder;
     text-align: center;
@@ -275,7 +283,8 @@
   
   .mission-content p {
     font-size: 15px;
-    color: #d4dee3;
+    color: black;
+    text-shadow: 2px 2px 4px #fff; 
     font-weight: 600;
     text-align: center;
     position: relative;
