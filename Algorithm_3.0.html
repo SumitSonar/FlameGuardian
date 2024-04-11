@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opencv JS - Video Dehazing and Desmoking</title>
+    <script async src="js/opencv.js" onload="openCvReady();"></script>
+    <script src="js/utils.js"></script>
+</head>
+<body>
+    <div style="display:flex;">
+        <div style="flex:1;">
+            <video id="cam_input1" height="480" width="640"></video>
+            <canvas id="canvas_output1"></canvas>
+        </div>
+        <div style="flex:1;">
+            <video id="cam_input2" height="480" width="640"></video>
+            <canvas id="canvas_output2"></canvas>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+function openCvReady() {
+  cv['onRuntimeInitialized']=()=>{
+    let video1 = document.getElementById("cam_input1");
+    let video2 = document.getElementById("cam_input2");
+    navigator.mediaDevices.getUserMedia({ video: true, audio: false })
+    .then(function(stream) {
+        video1.srcObject = stream;
+        video2.srcObject = stream;
+        video1.play();
+        video2.play();
+    })
+    .catch(function(err) {
+        console.log("An error occurred! " + err);
+    });
+
+    const FPS = 24;
+    const cap1 = new cv.VideoCapture(cam_input1);
+    const cap2 = new cv.VideoCapture(cam_input2);
+    const dst1 = new cv.Mat(video1.height, video1.width, cv.CV_8UC4);
+    const dst2 = new cv.Mat(video2.height, video2.width, cv.CV_8UC4);
+    const canvasOutput1 = document.getElementById('canvas_output1');
+    const canvasOutput2 = document.getElementById('canvas_output2');
+    const ctx1 = canvasOutput1.getContext('2d');
+    const ctx2 = canvasOutput2.getContext('2d');
+
+    function processVideo() {
+        let begin = Date.now();
+        cap1.read(dst1);
+        cap2.read(dst2);
+        
+        // Dehazing
+        dehaze(dst1);
+        dehaze(dst2);
+
+        // Desmoking
+        desmoke(dst1);
+        desmoke(dst2);
+
+        cv.imshow("canvas_output1", dst1);
+        cv.imshow("canvas_output2", dst2);
+        
+        // Draw processed frames on canvas
+        ctx1.drawImage(canvasOutput1, 0, 0, video1.width, video1.height);
+        ctx2.drawImage(canvasOutput2, 0, 0, video2.width, video2.height);
+        
+        // Schedule next frame processing
+        let delay = 1000 / FPS - (Date.now() - begin);
+        setTimeout(processVideo, delay);
+    }
+
+    // Start processing video frames
+    setTimeout(processVideo, 0);
+  };
+}
+
+// Dehazing function using dark channel prior
+function dehaze(image) {
+    const darkChannel = new cv.Mat();
+    cv.cvtColor(image, image, cv.COLOR_RGBA2RGB);
+    cv.cvtColor(image, darkChannel, cv.COLOR_RGB2GRAY);
+    cv.erode(darkChannel, darkChannel, cv.Mat.ones(3, 3, cv.CV_8U), new cv.Point(-1, -1), 1, cv.BORDER_REFLECT);
+    let minVal = new cv.Mat();
+    let maxVal = new cv.Mat();
+    cv.minMaxLoc(darkChannel, minVal, maxVal);
+    cv.subtract(maxVal, darkChannel, darkChannel);
+    cv.divide(darkChannel, maxVal, darkChannel, 255, cv.CV_8U);
+    cv.bitwise_not(darkChannel, darkChannel);
+    cv.cvtColor(darkChannel, darkChannel, cv.COLOR_GRAY2RGB);
+    cv.multiply(image, darkChannel, image, 1, cv.CV_8U);
+}
+
+// Desmoking function using color thresholding
+function desmoke(image) {
+    const hsv = new cv.Mat();
+    cv.cvtColor(image, hsv, cv.COLOR_RGB2HSV);
+    const lowerThreshold = new cv.Scalar(0, 0, 0);
+    const upperThreshold = new cv.Scalar(180, 255, 150);
+    const mask = new cv.Mat();
+    cv.inRange(hsv, lowerThreshold, upperThreshold, mask);
+    cv.bitwise_not(mask, mask);
+    cv.cvtColor(mask, mask, cv.COLOR_GRAY2RGB);
+    cv.multiply(image, mask, image, 1, cv.CV_8U);
+}
+</script>
+</html>
