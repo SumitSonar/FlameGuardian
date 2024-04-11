@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opencv JS</title>
+    <script async src="js/opencv.js" onload="openCvReady();"></script>
+    <script src="js/utils.js"></script>
+</head>
+<body>
+    <div style="display: flex;">
+        <div style="flex: 1;">
+            <video id="cam_input" height="480" width="640"></video>
+            <canvas id="canvas_output"></canvas>
+        </div>
+        <div style="flex: 1;">
+            <canvas id="processed_output"></canvas>
+        </div>
+    </div>
+</body>
+<script type="text/JavaScript">
+function openCvReady() {
+  cv['onRuntimeInitialized']=()=>{
+    let video = document.getElementById("cam_input"); // video is the id of video tag
+    navigator.mediaDevices.getUserMedia({ video: true, audio: false })
+    .then(function(stream) {
+        video.srcObject = stream;
+        video.play();
+    })
+    .catch(function(err) {
+        console.log("An error occurred! " + err);
+    });
+    let src = new cv.Mat(video.height, video.width, cv.CV_8UC4);
+    let dst = new cv.Mat(video.height, video.width, cv.CV_8UC4);
+    let processed = new cv.Mat(video.height, video.width, cv.CV_8UC4);
+    let cap = new cv.VideoCapture(cam_input);
+    let utils = new Utils('errorMessage');
+    const FPS = 24;
+   
+    // Desmoking function
+    function desmoke(input, output) {
+        // Convert to grayscale
+        let gray = new cv.Mat();
+        cv.cvtColor(input, gray, cv.COLOR_RGBA2GRAY, 0);
+       
+        // Apply contrast enhancement
+        cv.equalizeHist(gray, output);
+    }
+   
+    // Dehazing function
+    function dehaze(input, output) {
+        // Convert to grayscale
+        let gray = new cv.Mat();
+        cv.cvtColor(input, gray, cv.COLOR_RGBA2GRAY, 0);
+       
+        // Apply dehazing operation (Simple Dark Channel Prior)
+        let darkChannel = new cv.Mat();
+        cv.min(gray, gray, darkChannel);
+       
+        let minVal = cv.minMaxLoc(darkChannel).minVal;
+        let atmosphericLight = new cv.Scalar(minVal, minVal, minVal, 1);
+       
+        let t = 0.1; // Tweak this parameter for better results
+       
+        cv.subtract(gray, atmosphericLight, output);
+        cv.multiply(output, new cv.Mat([1.0 / (1.0 - t)]), output);
+       
+        // Convert back to RGBA
+        cv.cvtColor(output, output, cv.COLOR_GRAY2RGBA, 0);
+    }
+   
+    function processVideo() {
+        let begin = Date.now();
+        cap.read(src);
+       
+        // Apply desmoking
+        desmoke(src, processed);
+       
+        // Apply dehazing
+        dehaze(src, dst);
+       
+        // Display the processed video
+        cv.imshow("processed_output", dst);
+       
+        // Display the original video
+        cv.imshow("canvas_output", src);
+       
+        // Schedule next frame
+        let delay = 1000/FPS - (Date.now() - begin);
+        setTimeout(processVideo, delay);
+    }
+    // Schedule first frame
+    setTimeout(processVideo, 0);
+  };
+}
+</script>
+</html>
