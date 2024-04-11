@@ -1,248 +1,496 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-
-
-}
-
-
-html,
-body {
+    ;
+  }
+  
+  body,
+  html {
+    width: 100%;
     height: 100vh;
-
+    background-color: #021e43;
+  
+  }
+  
+  nav {
     width: 100%;
-
-}
-
-.container {
-    height: 100vh;
-    width: 100%;
-    background-color: rgb(5, 5, 60);
-}
-
-.nav {
-    height: 7vh;
-    width: 100%;
+    height: 80px;
     background-color: rgb(9, 9, 98);
-}
-
-.nav-content {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.logo {
-    height: 40px;
-    width: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  }
+  
+  label.logo {
     font-size: 25px;
     color: #fff;
-    font-weight: bolder;
-    margin-left: 1%;
-
-
-}
-
-.logo i {
+    line-height: 80px;
+    margin-left: 60px;
+  }
+  
+  label i {
     padding-right: 10px;
-
-}
-
-.nav-content {
-
-    padding: 10px 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1%;
-}
-.nav-links{
-    width:50%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    
-}
-.nav-content ul {
-    display: flex;
-    gap: 150px;
-    align-items: center;
-}
-
-.nav-content ul li {
-    list-style-type: none;
-}
-
-.nav-content ul li a {
+  }
+  
+  nav ul {
+    float: right;
+    list-style: none;
+    margin-right: 150px;
+  
+  }
+  
+  nav ul li {
+  
+    display: inline-block;
+    line-height: 80px;
+    margin-right: 100px;
+  
+  }
+  
+  nav ul a {
+    color: #ffffff;
     text-decoration: none;
-    color: #fff;
-}
-.menu-icon{
+    font-size: 15px;
+  }
+  
+  nav ul li a.active,
+  a:hover {
+  
+    background-color: rgb(6, 6, 86);
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  ul .Login-button,
+  .Signup-button {
+    width: 70px;
+    height: 30px;
+    background-color: #d42727;
+    text-align: center;
+    float: right;
+    padding-top: 5px;
+    margin-top: 25px;
+    margin-left: 50px;
+    border-radius: 10px;
+  }
+  
+  .login-button,
+  .signup-button li {
+    list-style: none;
+  
+  }
+  .Signup-button a:hover,.Login-button a:hover{
+    background-color:#d42727;
+  }
+  
+  
+  
+  #checkbutton {
+    font-size: 22px;
+    float: right;
+    line-height: 80px;
+    margin-right: 10px;
+    color: brown;
     display: none;
-}
-
-.menu-icon i{
-    color: #fff;
-    font-size: 30px;
-}
-.buttons{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 30px;
-    margin-right: 0.9%;
-}
-.buttons li{
-      list-style-type: none;
-}
-.buttons .login{
-    background-color: red;
-    font-weight: bold;
-    border-radius: 50px;
-    height: 30px;
-    width: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-}
-.buttons .signup{
-    background-color: red;
-    font-weight: bold;
-    border-radius: 50px;
-    height: 30px;
-    width: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-}
-.buttons .login li a,
-.buttons .signup li a{
-    color: #fff;
-    padding: 20px;
-    text-decoration: none;
+  }
   
-}
-.content-image{
+  #check {
+    display: none;
+  }
+  
+  .header-content {
+    width: 100%;
     height: 25vh;
-    width: 100%;
-    background:#021e43;
-   
-}
-.content-image-pic{
-    background-image: url("Main Image.png");
-    background-size: cover;
-    background-position: center;
-    height: 90%;
-    width: 95%;
-    border-radius: 20px;
+    background-color: #021e43;
     position: relative;
-    top:1vh;
-    left:2.2%;
-}
-.main-content-container{
-    height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .header-content-img {
+    width: 95%;
+    height: 23vh;
+    background-image: url("Firefighter-img.png");
+    background-position: center;
+    background-size: cover;
+  
+    border-radius: 20px;
+  }
+  
+  .header-content-img p {
+    margin: 60px 100px;
+  
+  }
+  
+  .line {
+    display: inline-block;
     width: 100%;
-    background: #011b2e;
-    background:;
+    font-size: 30px;
+    color: rgb(18, 7, 98);
+    font-weight: bolder;
+  }
+  
+  .main-content {
+    width: 100%;
+    height: 60vh;
+    background-color: rgb(6, 2, 41);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
   
-}
-.main-content-img1{
+  }
+  
+  .main-img1 {
+    height: 90%;
+    width: 30%;
     background-image: url("main image 1.png");
-    background-size: cover;
     background-position: center;
-    height: 90%;
-    width:30%;
-    border-radius: 20px;
-}
-.main-content-img2{
-    background-image: url("main image 2.png");
     background-size: cover;
-    background-position: center;
-    height: 90%;
-    width:30%;
     border-radius: 20px;
-}
-.main-content-img3{
-    background-image: url("main image 3.png");
+  }
+  
+  .main-img1 .heading {
+    text-align: center;
+    margin-top: 25%;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #fff;
+  }
+  
+  .main-img1 .paragraph {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    margin: 2% 10% 0% 10%;
+  }
+  
+  .main-img2 {
+    height: 90%;
+    width: 30%;
+    background-image: url("main\ image\ 2.png");
+    background-position: center;
     background-size: cover;
-    background-position: center;
-    height: 90%;
-    width:30%;
     border-radius: 20px;
-}
-.mission-vision-container{
-    background:#021e43;
+  }
+  
+  .main-img2 .heading {
+    text-align: center;
+    margin-top: 25%;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #fff;
+  }
+  
+  .main-img2 .paragraph {
+    text-align: center;
+    margin-top: 2%;
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    margin: 2% 10% 0% 10%;
+  }
+  
+  .main-img3 {
+    height: 90%;
+    width: 30%;
+    background-image: url("main\ image\ 3.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+  }
+  
+  .main-img3 .heading {
+    text-align: center;
+    margin: 25% 10% 0% 10%;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #fff;
+  }
+  
+  .main-img3 .paragraph {
+    text-align: center;
+    margin-top: 2%;
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    margin: 2% 10% 0% 10%;
+  }
+  
+  .mission-vision-container {
+    background: #021e43;
     height: 70%;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-}
-.mission-container ,.vision-container{
-    height:70%;
-    width:45%;
-    background-color: #162c80;
+  }
+  
+  .mission-container,
+  .vision-container {
+    height: 70%;
+    width: 45%;
+    background-image: url("mission-vision\ bg.png");
+    background-size: cover;
+    background-position: center;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-   
-}
-
-   
-
-.ellipse{
-    height:25%;
-    width:25%;
+  
+  }
+  
+  
+  
+  .ellipse {
+    height: 25%;
+    width: 20%;
     background-color: rgb(237, 219, 11);
     opacity: 30%;
     border-radius: 50%;
-    position: absolute; /* Position relative to the container */
-    left: 10%; /* Move 10% outside the viewport to the left */
+    position: absolute;
+    /* Position relative to the container */
+    left: 10%;
+    /* Move 10% outside the viewport to the left */
     top: -10%;
-}
-.mission-content{
-    
-    height:80%;
-    width:90%;
+  }
+  
+  .mission-content {
+  
+    height: 80%;
+    width: 90%;
     text-align: center;
     position: relative;
-    top:6%;
-}
-.mission-heading{
+    top: 6%;
+  }
+  
+  .mission-heading {
     font-size: 40px;
     color: #fff;
     font-weight: bolder;
     text-align: center;
-   
-}
-.mission-content p{
-    height:80%;
-    width:90%;
-    color:black;
+  
+  }
+  
+  .mission-content p {
+    font-size: 15px;
+    color: #d4dee3;
     font-weight: 600;
     text-align: center;
     position: relative;
-    top:10%;
-    left:3%
-}
-.footer{
-    background:#1F025F;
+    top: 10%;
+    margin: 0% 6% 40% 6%;
+  
+  
+  }
+  
+  .footer {
+    background-color:  rgb(6, 2, 41);
     height: 5vh;
     width: 100%;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
-}
+    font-size: 15px;
+    position: relative;
+  }
+  
+  
+  @media(max-width:1000px) {
+  
+    #check:checked~ul {
+      top: 80px;
+  
+  
+    }
+  
+    #checkbutton {
+      margin-top: 2px;
+      display: block;
+    }
+  
+    nav {
+  
+      position: fixed;
+      z-index: 1000;
+    }
+  
+    nav ul {
+      width: 100%;
+      height: 40vh;
+      background-color: rgb(3, 3, 37);
+      position: fixed;
+      top: -100%;
+      left: 0;
+      transition: .5s;
+      z-index: 999;
+  
+    }
+  
+    nav ul li {
+  
+      display: block;
+      text-align: center;
+      margin-right: 0px;
+      margin-top: 10px;
+      font-size: 10px;
+      line-height: 50px;
+  
+    }
+  
+    label.logo {
+      font-size: 20px;
+      margin-left: 20px;
+    }
+  
+  
+  
+    .header-content {
+      position: relative;
+      z-index: 0;
+      /* Ensure header content is behind navigation */
+      top: 80px;
+      /* Adjust the top value to place it below the navigation */
+    }
+  
+    .main-content {
+      height: 80vh;
+      position: relative;
+      top: 80px;
+      flex-direction: column;
+      gap: 13px;
+  
+    }
+  
+    .main-img1 {
+      margin-top: 10px;
+      height: 35%;
+      width: 95%;
+  
+    }
+  
+    .main-img2 {
+      height: 35%;
+      width: 95%;
+  
+    }
+  
+    .main-img3 {
+      height: 35%;
+      width: 95%;
+      margin-bottom: 10px;
+    }
+  
+    .mission-vision-container {
+      height: 95vh;
+      position: relative;
+      top: 80px;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .mission-container,
+    .vision-container {
+  
+      height: 60%;
+      width: 95%;
+      /* Adjust as needed */
+      margin: 30px 0px 20px 0px;
+      /* Adjust as needed */
+  
+    }
+  
+    .mission-content p {
+      font-size: 13px;
+  
+    }
+  
+    .mission-heading {
+      font-size: 25px;
+  
+  
+    }
+  
+    .ellipse {
+      height: 20%;
+      width: 22%;
+  
+    }
+  
+    .header-content-img p {
+      margin: 60px 10px;
+  
+    }
+  
+    .line {
+      display: inline-block;
+      width: 100%;
+      font-size: 15px;
+      color: rgb(18, 7, 98);
+      font-weight: 700;
+    }
+  
+    .header-content-img {
+      width: 95%;
+      height: 23vh;
+      background-image: url("Firefighter-img.png");
+      background-position: center;
+      background-size: cover;
+      border-radius: 20px;
+    }
+  
+    .main-img1 .heading {
+  
+      margin-top: 20%;
+      font-size: 20px;
+  
+    }
+  
+    .main-img1 .paragraph {
+  
+      font-size: 13px;
+  
+    }
+  
+    .main-img2 .heading {
+  
+      margin-top: 15%;
+      font-size: 20px;
+  
+    }
+  
+    .main-img2 .paragraph {
+  
+      font-size: 13px;
+  
+    }
+  
+    .main-img3 .heading {
+  
+     
+      margin: 15% 15% 0% 15%;
+      font-size: 20px;
+  
+    }
+  
+    .main-img3 .paragraph {
+  
+      font-size: 13px;
+  
+    }
+  
+    .footer {
+      top: 80px;
+    }
+  
+    .footer-content {
+      font-size: 60%;
+    }
+    
+    .Login-button{
+      margin-right: 80px;
+    }
+    
+  }
