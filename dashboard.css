@@ -1,246 +1,185 @@
-.dashboard-child {
-    position: absolute;
-    top: 836px;
-    left: 0;
-    background-color: #1f035f;
-    width: 1442px;
-    height: 64px;
-  }
-  .dashboard-inner,
-  .dashboard-item {
-    position: absolute;
-    background-color: var(--color-darkslateblue-200);
-  }
-  .dashboard-item {
-    top: -27px;
-    left: -102px;
-    border-radius: 50%;
-    border: 1px solid #000;
-    box-sizing: border-box;
-    width: 782px;
-    height: 695px;
-  }
-  .dashboard-inner {
-    top: 41px;
-    left: 961px;
-    width: 442px;
-    height: 35px;
-  }
-  .dashboard-child1,
-  .header-image-1 {
-    position: absolute;
-    width: calc(100% - 78px);
-    top: 59px;
-    right: 39px;
-    left: 39px;
-    border-radius: var(--br-11xl);
-    height: 192px;
-  }
-  .dashboard-child1 {
-    background-color: var(--color-gainsboro-100);
-  }
-  .header-image-1 {
-    max-width: 100%;
-    overflow: hidden;
-    object-fit: cover;
-  }
-  .vector-icon {
-    width: 16.4px;
-    position: relative;
-    height: 16.4px;
-  }
-  .search-location {
-    position: relative;
-    font-weight: 600;
-    white-space: pre-wrap;
-  }
-  .search-location-button {
-    position: absolute;
-    top: 74px;
-    right: 550px;
-    border-radius: var(--br-31xl);
-    background-color: var(--color-darkslateblue-100);
-    width: 327px;
-    height: 56px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: var(--padding-xl) var(--padding-31xl);
-    box-sizing: border-box;
-    font-size: var(--font-size-lg);
-  }
-  .fire-department-access {
-    position: relative;
-    font-weight: 800;
-  }
-  .fire-department-access-wrapper {
-    position: absolute;
-    top: 174px;
-    left: calc(50% - 641px);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: var(--padding-3xs);
-    font-size: var(--font-size-13xl);
-  }
-  .back-button-child {
-    width: 25.5px;
-    position: relative;
-    height: 0.8px;
-    object-fit: contain;
-  }
-  .span {
-    font-weight: 800;
-  }
-  .back1 {
-    font-weight: 500;
-  }
-  .back {
-    position: relative;
-  }
-  .back-button {
-    position: absolute;
-    width: calc(100% - 1285px);
-    top: 74px;
-    right: 1205px;
-    left: 80px;
-    border-radius: 20px;
-    background-color: var(--color-darkslateblue-100);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: var(--padding-3xs);
-    box-sizing: border-box;
-    gap: 0 10px;
-    cursor: pointer;
-  }
-  .openmojifire-extinguisher-icon3 {
-    width: 62px;
-    position: relative;
-    height: 50px;
-    overflow: hidden;
-    flex-shrink: 0;
-  }
-  .logo3 {
-    position: absolute;
-    width: 17.75%;
-    top: 76px;
-    right: 12.76%;
-    left: 69.49%;
-    height: 41px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    font-size: var(--font-size-5xl);
-  }
-  .video-container-child {
-    width: 580px;
-    position: relative;
-    height: 315px;
-    object-fit: cover;
-  }
-  .video-container {
-    position: absolute;
-    width: calc(100% - 178px);
-    top: 353px;
-    right: 82px;
-    left: 96px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-  }
-  .original-video {
-    align-self: stretch;
-    width: 156px;
-    position: relative;
-    display: inline-block;
-    flex-shrink: 0;
-  }
-  .original-video-button {
-    position: absolute;
-    width: calc(100% - 1196px);
-    top: 690px;
-    right: 924px;
-    left: 272px;
-    border-radius: var(--br-31xl);
-    background-color: var(--color-tomato);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: var(--padding-3xs) var(--padding-xl);
-    box-sizing: border-box;
-  }
-  .processed-video {
-    align-self: stretch;
-    width: 179px;
-    position: relative;
-    display: inline-block;
-    flex-shrink: 0;
-  }
-  .original-video-button1 {
-    position: absolute;
-    width: calc(100% - 1201px);
-    top: 700px;
-    right: 251px;
-    left: 950px;
-    border-radius: var(--br-31xl);
-    background-color: var(--color-tomato);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: var(--padding-3xs) var(--padding-xl);
-    box-sizing: border-box;
-  }
-  .copyright-2021-3 {
-    position: absolute;
-    width: 22.05%;
-    top: 94.67%;
-    left: 38.35%;
-    font-size: var(--font-size-smi-8);
-    letter-spacing: -0.5px;
-    line-height: 22.53px;
-    font-weight: 500;
-    font-family: var(--font-zen-kaku-gothic-antique);
-    text-align: left;
-    display: inline-block;
-  }
-  .customer-icon {
-    width: 62px;
-    position: relative;
-    height: 34px;
-    object-fit: cover;
-  }
-  .profile-photo {
-    position: absolute;
-    width: calc(100% - 1360px);
-    top: 70px;
-    right: 62px;
-    left: 1298px;
-    height: 53px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: var(--padding-3xs);
-    box-sizing: border-box;
-  }
-  .dashboard {
-    width: 100%;
-    position: relative;
-    background-color: var(--color-gray-500);
-    height: 900px;
-    overflow: hidden;
-    text-align: right;
-    font-size: var(--font-size-xl);
-    color: var(--color-white);
-    font-family: var(--font-poppins);
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+
+}
+
+
+html,
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #13072E;
+
+}
+
+.nav-container {
+  background-color: #13072E;
+  height: 23vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 5%;
+}
+
+.nav {
+  height: 23vh;
+  width: 95%;
+  background-image: url("nav-bg.png");
+  background-size: cover;
+  background-position:center;
+  border-radius: 20px;
+
+}
+.nav h1 {
+  position: relative;
+  top: 50%;
+  left: 1%;
+  color: white;
+  font-weight: bolder;
+}
+.nav-buttons {
+  position: relative;
+  top:5%;
+  display: flex;
+  justify-content: space-around;
+  gap: 18%;
+  z-index: 1;
+}
+
+.nav-buttons li {
+  list-style: none;
+}
+
+.nav-buttons li a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  margin-left: 20px;
+}
+
+.back-button {
+  height: 40px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #053D87;
+  border-radius: 20px;
+}
+.search-button {
+  height: 40px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #053D87;
+  border-radius: 20px;
+}
+.logo {
+  height: 40px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: #fff;
+  font-weight: bolder;
   
+ 
+}
+.logo i {
+  padding-right: 10px;
+ 
+}
+
+
+.user-profile {
+  height: 40px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+ 
+}
+.video-container-parent{
+  position: relative;
+  top:10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:30px
+}
+.video-container1 {
+  position: relative;
+  top:10%;
+  width: 100%;
+  max-width: 800px; /* Adjust this value as needed */
+}
+
+.video-container1 video {
+  width: 100%;
+  height: 50vh;
+}
+
+.video-container1  .button-container {
+  text-align: center;
+  margin-top: 10px; /* Adjust this value as needed */
+}
+
+.video-container1 .button-container button {
+  padding: 10px 20px ;
+  font-size: 16px;
+  background-color: #F45050;
+  border-radius: 20px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.video-container-parent{
+  position: relative;
+  top:10%;
+}
+.video-container2 {
+  position: relative;
+  top:10%;
+  width: 100%;
+  max-width: 800px; /* Adjust this value as needed */
+}
+
+.video-container2 video {
+  width: 100%;
+  height: 50vh;
+}
+
+.video-container2  .button-container {
+  text-align: center;
+  margin-top: 10px; /* Adjust this value as needed */
+}
+
+.video-container2 .button-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #F45050;
+  border-radius: 20px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.footer{
+  position: relative;
+  top:13%;
+  background:#1F025F;
+  height: 5vh;
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}

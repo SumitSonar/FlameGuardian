@@ -7,6 +7,7 @@
     <title>Login Page</title>
     <link rel="stylesheet" href="signup.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
 </head>
 
 <body>
@@ -29,26 +30,26 @@
             </div>
             <div class="container-form">
                 <div class="right">
-                    <form class="signup-form" action="#" method="post">
+                    <div class="signup-form" action="#" method="post">
                         <h2>STAND SHOULDER TO SHOULDER WITH HEROES</h2>
                         <h5>LOG IN &nbsp;&nbsp;AND&nbsp;&nbsp;REGISTER FOR DUTY</h5>
                         <div class="form-container">
                            
                             <div>
                                
-                                <input type="email" name="email" placeholder="Email" required>
+                                <input type="email" name="email" id="emailid" placeholder="Email" required>
                             </div>
                             <div>
                                 
-                                <input type="password" name="password" placeholder="Password" required>
+                                <input type="password" name="password" id="password" placeholder="Password" required>
                             </div>
                             <div>
                                 
-                                <input type="password" name="password" placeholder="Retype Password" required>
+                                <input type="password" name="retypepassword" id="retypepassword" placeholder="Retype Password" required>
                             </div>
-                            <button type="submit">Login</button>
+                            <button type="submit" id="submit"><a href="dash.html">Login</a></button>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -58,6 +59,8 @@
             Copyright 2021 - 2024 FlameGuardian Inc. All rights Reserved
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./mail.js"></script>
 </body>
 
 </html>

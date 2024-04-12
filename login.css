@@ -16,12 +16,13 @@ html,body{
 .container{
     height:100vh;
     width:100%;
+    display: flex;
 }
 .container-left{
-    display: inline-block;
+   
     height:100vh;
     width:40%;
-    background-image: url("Firefighter-img.png");
+    background-image: url("Signup-Login\ \ Firefighter.png");
     background-position: left;
     background-size: cover;;
 
@@ -54,7 +55,7 @@ html,body{
     top:3vh;
 }
 .container-right{
-    display: inline-block;
+   
     height:100vh;
     width:59%;
    
@@ -104,9 +105,9 @@ justify-content: space-between;
     margin-bottom: 15px;
     font-weight: lighter;
 }
-.signup-form input[type="text"],
-.signup-form input[type="email"],
-.signup-form input[type="password"] {
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"] {
     width: 100%;
     padding: 20px;
     margin-bottom: 15px;
@@ -116,19 +117,19 @@ justify-content: space-between;
     padding-left: 35px; /* Space for icon */
 
 }
-.signup-form input[type="text"]::placeholder,
-.signup-form input[type="email"]::placeholder,
-.signup-form input[type="password"]::placeholder {
+.form-container input[type="text"]::placeholder,
+.form-container input[type="email"]::placeholder,
+.form-container input[type="password"]::placeholder {
     color: #aaa;
 }
-.signup-form .fa {
+.form-container .fa {
     position: absolute;
     top: 50%;
     left: 10px;
     transform: translateY(-50%);
     color: #555;
 }
-.signup-form button {
+.form-container button {
     width: 50%;
     padding: 15px;
     background: black;
@@ -138,6 +139,12 @@ justify-content: space-between;
     cursor: pointer;
     position: relative;
     left: 25%;
+}
+.form-container button a {
+    text-decoration: none; 
+    font-size: 30px;
+    color: white; 
+    font-weight: bold; 
 }
 .signup-form button:hover {
     background: #0056b3;
@@ -159,5 +166,20 @@ justify-content: space-between;
     align-items: center;
     color: #fff;
 }
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .container-left{
+        height:50vh;
+        width:100vw;
+    }
+    .container-right{
+        height:80vh;
+        width:100vw;
+    }
 
 
+
+}
