@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+
+}
+
+
+html,
+body {
+    height: 100vh;
+    width: 100%;
+
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+
+}
+
+.container-left {
+
+    height: 100vh;
+    width: 55%;
+    background-image: url("Signup-Login\ \ Firefighter.png");
+    background-position: left;
+    background-size: cover;
+    ;
+
+}
+
+.logo {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 3.5vh;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px black; 
+}
+
+.logo i {
+    padding-right: 10px;
+}
+
+.img-content {
+    width: 60%;
+    position: relative;
+    top: 60vh;
+    left: 20%;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+   
+}
+.img-content h1{
+    text-shadow: 1px 1px 0px black; 
+}
+.img-content p {
+    position: relative;
+    top: 3vh;
+    text-shadow: 2px 2px 4px black; 
+}
+
+.container-right {
+
+    height: 100vh;
+    width: 100%;
+
+
+
+}
+
+.container-right .nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top:25px;
+
+}
+
+.return-home {
+
+    padding-left: 20px;
+
+}
+.return-home a {
+
+    text-decoration: none;
+    color: #340988;
+
+}
+
+.return-home i {
+    padding-right: 10px;
+}
+.back-to-login {
+    
+    padding-right: 30px;
+
+}
+.back-to-login a {
+    
+   text-decoration: none;
+   color: #340988;
+
+}
+
+.container-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20vh;
+
+}
+
+
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 60%;
+
+}
+
+.signup-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signup-form h4 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: lighter;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"] {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding-left: 35px;
+    /* Space for icon */
+
+}
+
+.form-container input[type="text"]::placeholder,
+.form-container input[type="email"]::placeholder,
+.form-container input[type="password"]::placeholder {
+    color: #aaa;
+}
+
+.form-container .fa {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #555;
+}
+
+.form-container button {
+    width: 50%;
+    padding: 15px;
+    background: black;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+    left: 25%;
+    margin-top: 10px;
+}
+
+.form-container button a {
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.signup-form button:hover {
+    background: #0056b3;
+}
+
+.form-container {
+    position: relative;
+    left: 0%;
+    top: 5vh;
+
+
+}
+
+.footer {
+    position: relative;
+    background: #0c0124;
+    height: 3.5vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.footer-content{
+    font-size: 12px;
+    font-weight: 600;
+    padding: 2px 0px 2px 0px;
+}
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .container-left {
+        width: 100%;
+        height: 45%;
+    }
+    .logo {
+       
+        top: 6%;
+        font-size: 23px;
+        
+    }
+
+    .container-right {
+        width: 100%;
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+    }
+
+
+    .container-left {
+        background-position: center;
+    }
+
+    .img-content {
+
+        top: 10vh;
+
+    }
+
+    .img-content h1 {
+        font-size: 18px;
+    }
+
+    .img-content p {
+        font-size: 12px;
+    }
+
+    .container-right .nav {
+        position: relative;
+        font-size: 13px;
+        margin-bottom: 60px;
+    }
+    .return-home {
+
+        padding-left: 0px;
+    
+    }
+    
+    .back-to-login {
+        padding-left: 40px;
+        padding-right: 5px;
+
+    }
+
+    .container-form {
+        top: 2vh;
+    }
+
+    .container-right nav {
+        top: 1%;
+        font-size: 12px;
+    }
+
+    .signup-form h2 {
+
+        font-size: 18px;
+    }
+
+    .signup-form h4 {
+
+        font-size: 13px;
+        font-weight: 500;
+        
+    }
+
+    .form-container {
+
+        top: 5vh;
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="email"],
+    .form-container input[type="password"] {
+
+        height: 30px;
+
+    }
+
+    .form-container button {
+        width: 40%;
+        left: 30%;
+        margin:  15px 0px 30px 0px;
+    }
+
+    .footer {
+        height: 3vh;
+
+    }
+
+    .footer-content {
+        font-size: 10px;
+    }
+}
