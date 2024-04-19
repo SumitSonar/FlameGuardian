@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenCV JS</title>
+    <script async src="opencv.js" onload="openCvReady();"></script>
+    <script src="utils.js"></script>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    
+</head>
+
+<body>
+    <div class="nav">
+        
+        <div class="grid-icon">
+            <i class="fa-solid fa-bars" id="grid-icon" style="color: #270b5b;"></i>
+        </div>
+        <div class="nav-buttons" id="nav-buttons">
+            <div class="back-button">
+                <i class="fa-solid fa-arrow-left" style="color: #ffffff;"></i>
+                <li><a href="index.html">Back</a></li>
+            </div>
+            <div class="search-button">
+                <i class="fa-sharp fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                <li><a href="#search">Search Location</a></li>
+            </div>
+            <div class="logo"><i class="fa-sharp fa-solid fa-fire-extinguisher"
+                    style="color: #ed3102;"></i>FlameGuardian</div>
+            <div class="user-logout-section">
+               
+                <div class="logout"><a href="index.html"><i class="fa-solid fa-power-off "
+                            style="color: #ffffff;"></i>Logout</a></div>
+            </div>
+        </div>
+        <h1>Fire Department Access</h1>
+    </div>
+
+    <div class="video-container">
+        <video id="cam_input" height="480" width="640"> <canvas></canvas></video>
+        <canvas id="canvas_original"></canvas>
+        <canvas id="canvas_desmoked"></canvas>
+
+    </div>
+    <div class="footer">
+        <div class="footer-content">
+            Copyright 2021 - 2024 FlameGuardian Inc. All rights Reserved
+        </div>
+    </div>
+</body>
+<script type="text/JavaScript">
+    function openCvReady() {
+        cv['onRuntimeInitialized'] = () => {
+            let video = document.getElementById("cam_input");
+            navigator.mediaDevices.getUserMedia({ video: true, audio: false })
+                .then(function(stream) {
+                    video.srcObject = stream;
+                    video.play();
+                })
+                .catch(function(err) {
+                    console.log("An error occurred! " + err);
+                });
+            let src = new cv.Mat(video.height, video.width, cv.CV_8UC4);
+            let dst = new cv.Mat(video.height, video.width, cv.CV_8UC4);
+            let cap = new cv.VideoCapture(cam_input);
+            let utils = new Utils('errorMessage');
+            const FPS = 24;
+
+            function desmoke(input, output) {
+                let gray = new cv.Mat();
+                cv.cvtColor(input, gray, cv.COLOR_RGBA2GRAY, 0);
+                cv.equalizeHist(gray, output);
+            }
+
+            function processVideo() {
+                let begin = Date.now();
+                cap.read(src);
+                desmoke(src, dst);
+                cv.imshow("canvas_original", src);
+                cv.imshow("canvas_desmoked", dst);
+                let delay = 1000 / FPS - (Date.now() - begin);
+                setTimeout(processVideo, delay);
+            }
+            setTimeout(processVideo, 0);
+        };
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+    const gridIcon = document.getElementById("grid-icon");
+    const navButtons = document.getElementById("nav-buttons");
+
+    gridIcon.addEventListener("click", function() {
+        navButtons.classList.toggle("active");
+    });
+});
+</script>
+
+
+</html>

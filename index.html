@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+  <nav>
+    <input type="checkbox" name="" id="check">
+    <label for="check" id="checkbutton"><i class="fa-solid fa-bars"></i></label>
+    <label class="logo"> <i class="fa-sharp fa-solid fa-fire-extinguisher"
+        style="color: #ed3102;"></i>FlameGuardian</label>
+    <ul>
+      <li><a class="active" href="">Home</a></li>
+      <li><a href="">Helpline No</a></li>
+      <li><a href="">About us</a></li>
+    
+        <div class="Login-button"><a href="login.html">Login</a></div>
+        <div class="Signup-button"><a href="sign up.html">Signup</a></div>
+      
+    </ul>
+
+  </nav>
+  <div class="header-content">
+
+    <div class="header-content-img">
+      <p>
+        <span class="line">Saving Lives.</span><br>
+        <span class="line">Saving the Planet.</span>
+      </p>
+    </div>
+  </div>
+  <div class="main-content">
+
+    <div class="main-img1">
+      <div class="main-content1">
+        <p class="heading">High Fatality Rate</p>
+        <p class="paragraph">An average of 48 people
+          in India die every day due
+          to fire-related accidents.</p>
+      </div>
+    </div>
+
+
+    <div class="main-img2">
+      <div class="main-content2">
+        <p class="heading">Fire Spread Ratio</p>
+        <p class="paragraph">The “India Risk Surveys “
+          2018 ranked India third in fire incidents, mainly in the
+          Northern and Western regions, posing significant risks to business continuity and operations.</p>
+      </div>
+
+    </div>
+
+    <div class="main-img3">
+      <div class="main-content3">
+        <p class="heading">Residential Fire
+          Prevalent</p>
+        <p class="paragraph">Residential buildings
+          witness the highest
+          number of fire-related
+          deaths compared to
+          other building types.</p>
+      </div>
+    </div>
+
+  </div>
+  <div class="mission-vision-container" id="mission-vision-container">
+    <div class="mission-container">
+      <div class="ellipse"></div>
+      <div class="mission-content">
+        <div class="mission-heading">Vision</div>
+        <p>At FlameGuardian , we envision a community where safety is paramount, and the flames of adversity are met
+          with swift, decisive, and compassionate response. Our vision is to be the steadfast guardians, shaping a
+          future where every individual feels secure, knowing that we stand ready to protect and serve.</p>
+      </div>
+    </div>
+    <div class="vision-container">
+      <div class="ellipse"></div>
+      <div class="mission-content">
+        <div class="mission-heading">Mission</div>
+        <p>At FlameGuardian , our unwavering mission is to safeguard lives, property, and community well-being. Through
+          a comprehensive approach integrating fire prevention, emergency response, and public education, we strive to
+          ensure the safety and prosperity of our community. It's our commitment to protect and empower, responding
+          effectively to emergencies and fostering a culture of resilience.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-content">
+      Copyright 2021 - 2024 FlameGuardian Inc. All rights Reserved
+    </div>
+  </div>
+
+  <script>
+    document.querySelector('nav ul li:nth-child(3) a').addEventListener('click', function (e) {
+      e.preventDefault();
+      const aboutSection = document.querySelector('#mission-vision-container');
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    document.querySelector('nav ul li:nth-child(2) a').addEventListener('click', function (e) {
+    e.preventDefault();
+    alert("Helpline No: 123456789"); // Change the number to the actual helpline number
+  });
+  </script>
+
+
+</body>
+
+</html>
